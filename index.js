@@ -61,6 +61,7 @@ function removeFromCart(item) {
       console.log(obj.hasOwnProperty(item))
       if (obj.hasOwnProperty(item)){
         delete cart[i]
+        console.log(cart)
       }
   }
   if (cart === cartOld) {
