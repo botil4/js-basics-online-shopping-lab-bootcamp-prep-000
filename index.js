@@ -55,7 +55,6 @@ function total() {
 
 function removeFromCart(item) {
   var cartOld = cart
-  console.log(cartOld)
   var obj = {}
   for(let i = 0; i < cart.length; i++) {
       obj = cart[i]
