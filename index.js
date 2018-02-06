@@ -54,7 +54,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var cartOld = cart
+  var cartOld = []
+  cartOld = cart
   var obj = {}
   for(let i = 0; i < cart.length; i++) {
       obj = cart[i]
