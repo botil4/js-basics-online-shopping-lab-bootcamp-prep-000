@@ -19,7 +19,7 @@ function addToCart(item) {
 
 function viewCart() {
   if(cart.length === 0) {
-    console.log("Your shopping cart is empty.")
+    return console.log("Your shopping cart is empty.")
   } else {
     var items = []
     var price = []
@@ -30,14 +30,20 @@ function viewCart() {
       price.push(Object.values(cart[i]))
       itemPrice.push(`${items[i]} at $${price[i]}`)
     }
+  }
+    if(cart.length === 1) {
+      string = string + itemPrice + "."
+      console.log(string)
+    } else if (cart.length === 2) {
+      string = string + itemPrice.join(" and ") + "."
+      console.log(string)
+    } else {
     var itemPriceLast = itemPrice.slice(-1)
     itemPrice.pop()
     string = string + itemPrice.join(", ") + ", and " + itemPriceLast +"."
     console.log(string)
-    console.log(itemPriceLast)
   }
 }
-viewCart()
 
 function total() {
   // write your code here
