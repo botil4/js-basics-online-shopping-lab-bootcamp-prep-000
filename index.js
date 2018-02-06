@@ -46,10 +46,9 @@ function viewCart() {
 }
 
 function total() {
-  var price = []
+  var total = 0
   for(let i = 0; i < cart.length; i++) {
       price.push(Object.values(cart[i]))
-      itemPrice.push(`${items[i]} at $${price[i]}`)
     }
 }
 
