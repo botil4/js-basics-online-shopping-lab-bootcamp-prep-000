@@ -60,7 +60,7 @@ function removeFromCart(item) {
   }
   var index = items.findIndex(k => k==item)
   cart = cart.splice(index, 1)
-  console.log(index)
+  console.log(cart)
 }
 removeFromCart("eggs")
 function placeOrder(cardNumber) {
