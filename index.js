@@ -59,7 +59,7 @@ function removeFromCart(item) {
       items.push(Object.keys(cart[i]))
   }
   var index = items.findIndex(k => k==item)
-  cart = cart.splice(index, 1)
+  cart.splice(index, 1)
   console.log(cart)
 }
 removeFromCart("eggs")
