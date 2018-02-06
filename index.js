@@ -55,7 +55,7 @@ function total() {
 
 function removeFromCart(item) {
   var cartOld = cart
-  cartOld = cart
+  console.log(cartOld)
   var obj = {}
   for(let i = 0; i < cart.length; i++) {
       obj = cart[i]
@@ -70,7 +70,7 @@ function removeFromCart(item) {
     return cart
   }
 }
-
+removeFromCart()
 function placeOrder(cardNumber) {
   // write your code here
 }
