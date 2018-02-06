@@ -32,7 +32,7 @@ function viewCart() {
     }
     var itemPriceLast = itemPrice.slice(-1)
     itemPrice.pop()
-    string = string + itemPrice.join(", ") + itemPriceLast +"."
+    string = string + itemPrice.join(", ") + " and " itemPriceLast +"."
     console.log(string)
     console.log(itemPriceLast)
   }
