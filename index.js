@@ -59,7 +59,7 @@ function removeFromCart(item) {
       items.push(Object.keys(cart[i]))
   }
   var index = items.findIndex(k => k==item)
-  console.log(items)
+  console.log(index)
 }
 removeFromCart("bananas")
 function placeOrder(cardNumber) {
