@@ -35,6 +35,7 @@ function viewCart() {
   }
 }
 viewCart()
+console.log(cart.length)
 function total() {
   // write your code here
 }
