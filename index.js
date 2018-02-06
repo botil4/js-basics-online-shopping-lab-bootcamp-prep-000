@@ -54,23 +54,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var cartOld = cart
-  var obj = {}
-  var len = cart.length
-  for(let i = 0; i < len; i++) {
-      obj = cart[i]
-      console.log(obj.hasOwnProperty(item))
-      if (obj.hasOwnProperty(item)){
-        cart.splice(i, 1)
-        console.log(cart);
-      }
-  }
-  if (cart === cartOld) {
-    console.log("That item is not in your cart.")
-    return cart
-  } else {
-    return cart
-  }
+  var index = cart.findIndex(k => k==item)
+  console.log(index)
 }
 removeFromCart("bananas")
 function placeOrder(cardNumber) {
