@@ -23,12 +23,14 @@ function viewCart() {
   } else {
     var items = []
     var price = []
+    var itemPrice
     var string = "In your cart, you have "
     for(let i = 0; i < cart.length; i++) {
       items.push(Object.keys(cart[i]))
       price.push(Object.values(cart[i]))
+      itemPrice.push(`${items[i]} at $${price[i]}`)
       console.log(items)
-      string = string + `${items[i]} at $${price[i]}.`
+      string = string + itemPrice.join().`
     }
     console.log(string)
   }
