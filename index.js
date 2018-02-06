@@ -30,6 +30,7 @@ function viewCart() {
       price.push(Object.values(cart[i]))
       itemPrice.push(`${items[i]} at $${price[i]}`)
     }
+    var itemPriceLast = itemPrice
     string = string + itemPrice.join(", ") + "."
     console.log(string)
   }
