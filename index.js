@@ -54,10 +54,19 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var cartOld = cart
   var obj = {}
   for(let i = 0; i < cart.length; i++) {
       obj = cart[i]
-      console.log(obj)
+      if (obj.hasOwnProperty(item)){
+        delete cart[i]
+      }
+  }
+  if (cart === cartOld) {
+    console.log("That item is not in your cart.")
+    return cart
+  } else {
+    return cart
   }
 }
 removeFromCart()
