@@ -31,7 +31,8 @@ function viewCart() {
       itemPrice.push(`${items[i]} at $${price[i]}`)
     }
     var itemPriceLast = itemPrice.slice(-1)
-    string = string + itemPrice.join(", ") + "."
+    itemPrice.pop()
+    string = string + itemPrice.join(", ") + itemPriceLast +"."
     console.log(string)
     console.log(itemPriceLast)
   }
