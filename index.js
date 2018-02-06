@@ -54,9 +54,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  var obj = {}
+  for(let i = 0; i < cart.length; i++) {
+      obj = cart[i]
+      console.log(obj)
+  }
 }
-
+removeFromCart()
 function placeOrder(cardNumber) {
   // write your code here
 }
