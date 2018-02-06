@@ -30,13 +30,14 @@ function viewCart() {
       price.push(Object.values(cart[i]))
       itemPrice.push(`${items[i]} at $${price[i]}`)
     }
-    var itemPriceLast = itemPrice
+    var itemPriceLast = itemPrice.slice(-1)
     string = string + itemPrice.join(", ") + "."
     console.log(string)
+    console.log(itemPriceLast)
   }
 }
 viewCart()
-console.log(cart.length)
+
 function total() {
   // write your code here
 }
