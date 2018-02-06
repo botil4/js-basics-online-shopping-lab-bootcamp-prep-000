@@ -60,7 +60,7 @@ function removeFromCart(item) {
   }
   var index = items.findIndex(k => k==item)
   if(index === -1) {
-    console.log("This item is not in your cart.")
+    console.log("That item is not in your cart.")
   } else {
     cart.splice(index, 1)
   }
