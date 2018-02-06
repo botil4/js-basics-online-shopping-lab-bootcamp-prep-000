@@ -21,9 +21,12 @@ function viewCart() {
   if(cart.length === 0) {
     console.log("Your shopping cart is empty.")
   } else {
-    string = "In your cart, you have "
-    for( const prop in cart) {
-      string = string + `${prop} at $${cart[prop]}.`
+    var items = []
+    var price = []
+    var string = "In your cart, you have "
+    for(let i = 0; i < cart.length; i++) {
+      items = items.push(Object.keys(cart[i]))
+      string = string + `${items[i]} at $${cart[prop]}.`
     }
     console.log(string)
   }
