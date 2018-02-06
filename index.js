@@ -54,8 +54,9 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var items = Object.keys(cart)
   var index = cart.findIndex(k => k==item)
-  console.log(index)
+  console.log(items)
 }
 removeFromCart("bananas")
 function placeOrder(cardNumber) {
