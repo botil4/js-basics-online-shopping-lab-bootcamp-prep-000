@@ -65,7 +65,8 @@ function removeFromCart(item) {
     cart.splice(index, 1)
   }
 }
-removeFromCart("pie")
+
 function placeOrder(cardNumber) {
-  // write your code here
+  console.log(cardNumber)
 }
+placeOrder()
