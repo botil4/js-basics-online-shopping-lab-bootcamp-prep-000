@@ -59,8 +59,11 @@ function removeFromCart(item) {
       items.push(Object.keys(cart[i]))
   }
   var index = items.findIndex(k => k==item)
-  console.log(index)
-  cart.splice(index, 1)
+  if(index === -1) {
+    console.log("This item is not in your cart.")
+  } else {
+    cart.splice(index, 1)
+  }
 }
 removeFromCart("pie")
 function placeOrder(cardNumber) {
