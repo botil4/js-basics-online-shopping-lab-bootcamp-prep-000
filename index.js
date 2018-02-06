@@ -60,7 +60,7 @@ function removeFromCart(item) {
       obj = cart[i]
       console.log(obj.hasOwnProperty(item))
       if (obj.hasOwnProperty(item)){
-        delete cart[i]
+        cart.splice(i, 1)
         console.log(cart);
       }
   }
