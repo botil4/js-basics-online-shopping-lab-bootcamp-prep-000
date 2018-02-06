@@ -61,7 +61,7 @@ function removeFromCart(item) {
   var index = items.findIndex(k => k==item)
   console.log(index)
 }
-removeFromCart("bananas")
+removeFromCart("eggs")
 function placeOrder(cardNumber) {
   // write your code here
 }
