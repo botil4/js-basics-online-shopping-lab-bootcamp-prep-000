@@ -55,7 +55,10 @@ function total() {
 
 function removeFromCart(item) {
   var items = Object.keys(cart)
-  var index = cart.findIndex(k => k==item)
+  for(let i = 0; i < cart.length; i++) {
+      items.push(Object.keys(cart[i]))
+  }
+  var index = items.findIndex(k => k==item)
   console.log(items)
 }
 removeFromCart("bananas")
