@@ -29,7 +29,6 @@ function viewCart() {
       items.push(Object.keys(cart[i]))
       price.push(Object.values(cart[i]))
       itemPrice.push(`${items[i]} at $${price[i]}`)
-      console.log(items)
       string = string + itemPrice.join().`
     }
     console.log(string)
