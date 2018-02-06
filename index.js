@@ -70,7 +70,7 @@ function removeFromCart(item) {
     return cart
   }
 }
-removeFromCart()
+removeFromCart(bananas)
 function placeOrder(cardNumber) {
   // write your code here
 }
